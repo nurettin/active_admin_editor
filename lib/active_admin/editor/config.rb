@@ -28,7 +28,12 @@ module ActiveAdmin
 
       # wysiwyg stylesheets that get included in the backend and the frontend.
       attr_accessor :stylesheets
-
+       
+      # ActiveAdmin::Editor.config do |config|
+      #   config.parser_rules= PARSER_RULES.dup
+      #   config.parser_rules["tags"]["iframe"]["delete"]= 0
+      attr_accessor :parser_rules 
+       
       def storage_dir
         @storage_dir ||= 'uploads'
       end

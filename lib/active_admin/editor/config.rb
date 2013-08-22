@@ -30,8 +30,8 @@ module ActiveAdmin
       attr_accessor :stylesheets
        
       # ActiveAdmin::Editor.config do |config|
-      #   config.parser_rules= PARSER_RULES.dup
-      #   config.parser_rules["tags"]["iframe"]["delete"]= 0
+      #   config.parser_rules= ActiveAdmin::Editor::PARSER_RULES.dup
+      #   config.parser_rules["tags"]["iframe"]["remove"]= 0
       attr_accessor :parser_rules 
        
       def storage_dir
